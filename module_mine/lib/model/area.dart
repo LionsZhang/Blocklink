@@ -12,8 +12,8 @@ class Area {
   String? us_name;
   String? cn_name;
   String? code;
-  String? get name => WidgetsBinding.instance!.window.locale.toString() == 'zh_CN' ? cn_name : us_name;
-  String? get sort_name => WidgetsBinding.instance!.window.locale.toString() == 'zh_CN' ? first_pinyin : us_name;
+  String? get name => WidgetsBinding.instance.window.locale.toString() == 'zh_CN' ? cn_name : us_name;
+  String? get sort_name => WidgetsBinding.instance.window.locale.toString() == 'zh_CN' ? first_pinyin : us_name;
   String get first_pinyin => PinyinHelper.getFirstWordPinyin(cn_name!);
   String get short_pinyin => PinyinHelper.getShortPinyin(cn_name!);
 

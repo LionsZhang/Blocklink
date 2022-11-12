@@ -44,7 +44,7 @@ class _ArticleRecommendPageState extends State<ArticleRecommendPage> with BasePa
 
     _articleModel = ArticleModel(widget.tag ?? '');
 
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
         initViewModel();
       }

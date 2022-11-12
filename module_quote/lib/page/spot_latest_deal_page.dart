@@ -42,7 +42,7 @@ class _SpotLatestDealPageState extends State<SpotLatestDealPage> with BasePageMi
     super.initState();
 
     _spotDealModel = SpotDealModel();
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
         initViewModel();
       }

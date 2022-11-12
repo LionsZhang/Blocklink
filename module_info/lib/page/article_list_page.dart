@@ -51,7 +51,7 @@ class _ArticleListPageState extends State<ArticleListPage> with BasePageMixin<Ar
 
     _articleModel = ArticleModel(widget.tag ?? '');
 
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
         initViewModel();
       }

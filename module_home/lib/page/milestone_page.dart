@@ -47,7 +47,7 @@ class _MileStonePageState extends State<MileStonePage> with BasePageMixin<MileSt
       GlobalKey<BasePageMixin>(debugLabel: _tabTitles[2]),
     ];
 
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
         _tabController.index = widget.initialIndex;
         _pageController.jumpToPage(widget.initialIndex);

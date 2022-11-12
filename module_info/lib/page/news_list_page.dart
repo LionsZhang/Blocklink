@@ -56,7 +56,7 @@ class _NewsListPageState extends State<NewsListPage> with BasePageMixin<NewsList
 
     _newsModel = NewsModel(widget.tag ?? '');
 
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
         initViewModel();
       }

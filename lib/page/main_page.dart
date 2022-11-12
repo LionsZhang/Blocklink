@@ -45,12 +45,12 @@ class _MainPageState extends State<MainPage> with WidgetsBindingObserver, BasePa
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance!.addObserver(this);
+    WidgetsBinding.instance.addObserver(this);
 
     initView();
     initViewModel();
 
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
         initUniLinks();
       }
@@ -141,8 +141,8 @@ class _MainPageState extends State<MainPage> with WidgetsBindingObserver, BasePa
   void dispose() {
     if (_sub != null) _sub!.cancel();
     _pageController.dispose();
-    imageCache!.clear();
-    WidgetsBinding.instance!.removeObserver(this);
+    imageCache.clear();
+    WidgetsBinding.instance.removeObserver(this);
     super.dispose();
   }
 

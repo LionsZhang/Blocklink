@@ -219,7 +219,7 @@ class NumUtil {
     }
 
     String result;
-    String language = WidgetsBinding.instance!.window.locale.toString();
+    String language = WidgetsBinding.instance.window.locale.toString();
 
     if (language.toLowerCase().contains('zh')) {
       if (volum >= 100000000) {

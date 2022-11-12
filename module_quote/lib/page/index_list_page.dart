@@ -44,7 +44,7 @@ class _IndexListPageState extends State<IndexListPage> with BasePageMixin<IndexL
     super.initState();
 
     _indexModel = QuoteIndexModel();
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
         initViewModel();
       }

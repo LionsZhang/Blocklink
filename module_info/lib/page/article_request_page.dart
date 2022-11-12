@@ -64,7 +64,7 @@ class _ArticleRequestPageState extends State<ArticleRequestPage> {
 
     _articleModel = ArticleModel('');
 
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
         initViewModel();
       }

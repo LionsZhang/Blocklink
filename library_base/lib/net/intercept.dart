@@ -20,7 +20,7 @@ class AuthInterceptor extends Interceptor {
 
     if (DeviceUtil.isWeb) {
       String version = '1.0.0';
-      String language = WidgetsBinding.instance!.window.locale.toString();
+      String language = WidgetsBinding.instance.window.locale.toString();
       String dev = 'Web';
       String channel = 'official';
 
@@ -32,7 +32,7 @@ class AuthInterceptor extends Interceptor {
 
     } else if (DeviceUtil.isDesktop) {
       String version = '1.0.0';
-      String language = WidgetsBinding.instance!.window.locale.toString();
+      String language = WidgetsBinding.instance.window.locale.toString();
       String dev = DeviceUtil.isWindows ? 'windows' : DeviceUtil.isMacOS ? 'macos' : DeviceUtil.isLinux ? 'linux' : 'desktop';
       String channel = 'official';
 
@@ -46,7 +46,7 @@ class AuthInterceptor extends Interceptor {
       PackageInfo packageInfo = await PackageInfo.fromPlatform();
 
       String? version = packageInfo.version;
-      String language = WidgetsBinding.instance!.window.locale.toString();
+      String language = WidgetsBinding.instance.window.locale.toString();
       String dev = DeviceUtil.isAndroid ? 'Android' : (DeviceUtil.isIOS ? 'iOS' : 'Other');
       String channel = await ChannelUtil.getChannel();
 

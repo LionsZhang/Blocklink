@@ -46,7 +46,7 @@ class _IndexPlatformPageState extends State<IndexPlatformPage> with BasePageMixi
     super.initState();
 
     _quoteModel = IndexPlatformModel();
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
         initViewModel();
       }

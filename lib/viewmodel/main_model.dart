@@ -42,7 +42,7 @@ class MainModel extends ValueNotifier<int> {
       if (event.page.value >= 0) {
         this.pageController.jumpToPage(event.page.value);
 
-        WidgetsBinding.instance!.addPostFrameCallback((_) {
+        WidgetsBinding.instance.addPostFrameCallback((_) {
           this.keyList![event.page.value].currentState?.jump(params: event.params);
         });
       }

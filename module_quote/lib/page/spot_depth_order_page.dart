@@ -40,7 +40,7 @@ class _SpotDepthOrderPageState extends State<SpotDepthOrderPage> with BasePageMi
     super.initState();
 
     _spotDepthModel = SpotDepthModel();
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
         initViewModel();
       }

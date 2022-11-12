@@ -105,7 +105,7 @@ class _SpotKlineHBarState extends State<SpotKlineHBar> with AutomaticKeepAliveCl
         height: body.size.height - tab.size.height,
         sortIndex: _subIndex,
         onSelected: (index, name) {
-          WidgetsBinding.instance!.addPostFrameCallback((_) {
+          WidgetsBinding.instance.addPostFrameCallback((_) {
             _subIndex = index;
             _lastIndex = _tabController.index;
             if (_spotKlineModel.getQuoteList(_tabController.index) != null) {
@@ -116,7 +116,7 @@ class _SpotKlineHBarState extends State<SpotKlineHBar> with AutomaticKeepAliveCl
           });
         },
         onCancel: () {
-          WidgetsBinding.instance!.addPostFrameCallback((_) {
+          WidgetsBinding.instance.addPostFrameCallback((_) {
             if (_lastIndex != _tablength - 1) {
               _subIndex = null;
             }

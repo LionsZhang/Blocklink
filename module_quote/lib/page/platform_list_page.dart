@@ -42,7 +42,7 @@ class _PlatformListPageState extends State<PlatformListPage> with BasePageMixin<
     super.initState();
 
     _platformModel = QuotePlatformModel();
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
         initViewModel();
       }

@@ -28,7 +28,7 @@ class SplashPageState extends State<SplashPage> {
   void initState() {
     super.initState();
 
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       initViewModel();
     });
 //    Future.delayed(new Duration(seconds: 1), () {

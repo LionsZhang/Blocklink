@@ -159,8 +159,8 @@ class _KChartWidgetState extends State<KChartWidget> with TickerProviderStateMix
         // isDrag = false;
         final Tolerance tolerance = Tolerance(
           velocity:
-              1.0 / (0.050 * WidgetsBinding.instance!.window.devicePixelRatio), // logical pixels per second
-          distance: 1.0 / WidgetsBinding.instance!.window.devicePixelRatio, // logical pixels
+              1.0 / (0.050 * WidgetsBinding.instance.window.devicePixelRatio), // logical pixels per second
+          distance: 1.0 / WidgetsBinding.instance.window.devicePixelRatio, // logical pixels
         );
 
         ClampingScrollSimulation simulation = ClampingScrollSimulation(

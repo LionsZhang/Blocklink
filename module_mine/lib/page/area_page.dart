@@ -45,7 +45,7 @@ class _AreaPageState extends State<AreaPage> with BasePageMixin<AreaPage> {
   void initState() {
     super.initState();
 
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
         _refresh();
       }
@@ -78,7 +78,7 @@ class _AreaPageState extends State<AreaPage> with BasePageMixin<AreaPage> {
 
     areaCode = '+' + area.code!;
 
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       Routers.goBackWithParams(context, areaCode!);
     });
   }
@@ -88,7 +88,7 @@ class _AreaPageState extends State<AreaPage> with BasePageMixin<AreaPage> {
     _searchList.clear();
     _currentList.clear();
 
-    if (WidgetsBinding.instance!.window.locale.toString() == 'zh_CN') {
+    if (WidgetsBinding.instance.window.locale.toString() == 'zh_CN') {
       _allList.forEach((element) {
         if (element.cn_name!.toLowerCase().contains(key) ||
             element.short_pinyin.toLowerCase().contains(key) ||

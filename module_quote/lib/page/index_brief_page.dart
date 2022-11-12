@@ -53,7 +53,7 @@ class _IndexBriefPageState extends State<IndexBriefPage> with BasePageMixin<Inde
     super.initState();
 
     _briefModel = IndexBriefModel();
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
         initViewModel();
       }

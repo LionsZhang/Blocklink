@@ -41,7 +41,7 @@ class _IndexDataPageState extends State<IndexDataPage> with WidgetsBindingObserv
     super.initState();
 
     _dataModel = IndexDataModel();
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
         initViewModel();
       }
