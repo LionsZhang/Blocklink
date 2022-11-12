@@ -22,8 +22,7 @@
 * 代码迁移至nullsafety
 * 全平台适配，Web、Android、iOS、Windows、macos
 
-## 在线Demo
-[http://www.jerryplay.top/lighthouse](http://www.jerryplay.top/lighthouse)
+
 
 备注：部分三方库不支持Web、Desktop平台，如微信、bugly、webview等，因此Web、Desktop端相关功能暂时缺失
 
